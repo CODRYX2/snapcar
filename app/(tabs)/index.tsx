@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {
-  Heart, MessageCircle, Send, MoveHorizontal as MoreHorizontal, Trophy, Zap, Camera, Play, X, UserPlus, Plus, Star
   Text,
   StyleSheet,
   ScrollView,
@@ -11,7 +10,7 @@ import {
   Modal,
   Alert,
 } from 'react-native';
-import { Heart, MessageCircle, Send, MoveHorizontal as MoreHorizontal, Trophy, Zap, Camera, Play, X, UserPlus, Plus } from 'lucide-react-native';
+import { Heart, MessageCircle, Send, MoveHorizontal as MoreHorizontal, Trophy, Zap, Camera, Play, X, UserPlus, Plus, Star } from 'lucide-react-native';
 
 interface Post {
   id: string;
