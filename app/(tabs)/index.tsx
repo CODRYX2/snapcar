@@ -162,7 +162,8 @@ export default function FeedScreen() {
 
   const openStory = (story: any) => {
     if (story.isOwn) {
-      Alert.alert('Hikaye Ekle', 'Kamera açılacak ve hikaye oluşturabileceksin!');
+      console.log('Opening camera for story creation');
+      // Navigate to camera with story mode
     } else {
       setSelectedStory(story);
       setShowStoryModal(true);
@@ -170,7 +171,7 @@ export default function FeedScreen() {
   };
 
   const openFriends = () => {
-    setShowFriendsModal(true);
+    Alert.alert('Arkadaş Listesi', 'Arkadaş listesi açılıyor...');
   };
 
   const renderLicensePlate = (plate: string, isPremium: boolean) => (

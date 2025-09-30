@@ -99,10 +99,8 @@ export default function MessagesScreen() {
   );
 
   const openChat = (message: Message) => {
-    Alert.alert(
-      'Sohbet Açılıyor',
-      `${message.isGroup ? message.groupName : message.sender} ile sohbet açılıyor...`
-    );
+    console.log('Opening chat with:', message.isGroup ? message.groupName : message.sender);
+    // Navigation to chat screen would be implemented here
   };
 
   const markAsRead = (messageId: string) => {

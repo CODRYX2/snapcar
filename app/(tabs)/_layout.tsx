@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { Camera, Hop as Home, Users, User, MessageCircle } from 'lucide-react-native';
+import { Camera, Home, Users, User, MessageCircle } from 'lucide-react-native';
 import { StyleSheet } from 'react-native';
 
 export default function TabLayout() {

@@ -82,9 +82,11 @@ export default function CameraScreen() {
     if (cameraRef.current) {
       try {
         const photo = await cameraRef.current.takePictureAsync();
+        console.log('Photo taken:', photo);
         setShowShareModal(true);
       } catch (error) {
         console.error('Photo capture failed:', error);
+        Alert.alert('Hata', 'Fotoğraf çekilemedi. Lütfen tekrar deneyin.');
       }
     }
   };
@@ -94,11 +96,13 @@ export default function CameraScreen() {
       try {
         setIsRecording(true);
         const video = await cameraRef.current.recordAsync();
+        console.log('Video recorded:', video);
         setIsRecording(false);
         setShowShareModal(true);
       } catch (error) {
         console.error('Video recording failed:', error);
         setIsRecording(false);
+        Alert.alert('Hata', 'Video kaydedilemedi. Lütfen tekrar deneyin.');
       }
     }
   };

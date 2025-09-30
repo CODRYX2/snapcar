@@ -8,6 +8,7 @@ import {
   SafeAreaView,
   Image,
   TextInput,
+  Alert,
 } from 'react-native';
 import {
   Search,

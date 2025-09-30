@@ -127,6 +127,14 @@ export default function ProfileScreen() {
     setShowBadgeModal(true);
   };
 
+  const handleEditProfile = () => {
+    Alert.alert('Profil Düzenle', 'Profil düzenleme sayfası açılacak...');
+  };
+
+  const handleSettings = () => {
+    Alert.alert('Ayarlar', 'Ayarlar sayfası açılacak...');
+  };
+
   const renderLicensePlate = (plate: string, isPremium: boolean) => (
     <View style={[
       styles.licensePlate,
@@ -145,7 +153,7 @@ export default function ProfileScreen() {
       <ScrollView showsVerticalScrollIndicator={false}>
         {/* Header */}
         <View style={styles.header}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={handleEditProfile}>
             <Edit3 size={24} color="white" />
           </TouchableOpacity>
           <Text style={styles.username}>bmw_lover_23</Text>
