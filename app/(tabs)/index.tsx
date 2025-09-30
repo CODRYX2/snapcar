@@ -325,7 +325,7 @@ export default function FeedScreen() {
       </ScrollView>
 
       {/* Comments Modal */}
-      <Modal
+          </View>
         visible={showCommentModal}
         animationType="slide"
         transparent={true}

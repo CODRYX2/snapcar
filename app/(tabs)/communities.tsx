@@ -20,6 +20,7 @@ import {
   Calendar,
   ChevronRight,
   Zap,
+  MessageCircle,
 } from 'lucide-react-native';
 
 interface Community {
