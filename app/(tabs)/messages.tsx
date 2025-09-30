@@ -10,16 +10,7 @@ import {
   TextInput,
   Alert,
 } from 'react-native';
-import {
-  Search,
-  MessageCircle,
-  Send,
-  Users,
-  Car,
-  Crown,
-  Circle,
-  CheckCircle2,
-} from 'lucide-react-native';
+import { Search, MessageCircle, Send, Users, Car, Crown, Circle, CircleCheck as CheckCircle2 } from 'lucide-react-native';
 
 interface Message {
   id: string;
