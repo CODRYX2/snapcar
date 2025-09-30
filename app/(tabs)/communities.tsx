@@ -151,10 +151,8 @@ export default function CommunitiesScreen() {
   };
 
   const openGroupChat = (community: Community) => {
-    Alert.alert(
-      'Grup Sohbeti',
-      `${community.name} grup sohbetine katılıyorsunuz...`
-    );
+    // Group chat functionality would be implemented here
+    console.log(`Opening group chat for ${community.name}`);
   };
   const filteredCommunities = communitiesList.filter(community => {
     const matchesSearch = community.name.toLowerCase().includes(searchText.toLowerCase());
