@@ -127,9 +127,10 @@ export default function FriendsScreen() {
     if (friendToAdd) {
       setFriends(prev => [...prev, friendToAdd]);
       setSuggested(prev => prev.filter(f => f.id !== friendId));
-      Alert.alert('Başarılı!', `${friendToAdd.username} arkadaş listenize eklendi.`);
     }
   };
+
+  const sendMessage = (friend: Friend) => {
     Alert.alert('Mesaj Gönderiliyor', `${friend.username} ile sohbet başlatılıyor...`);
   };
 
@@ -191,7 +192,6 @@ export default function FriendsScreen() {
         ) : (
           <TouchableOpacity style={styles.messageButton}>
             <Send size={20} color="#007AFF" />
-            onPress={() => sendMessage(friend)}
           </TouchableOpacity>
         )}
       </View>
